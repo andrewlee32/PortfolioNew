@@ -14,7 +14,16 @@ module.exports = {
       },
       screens: {
         '2xl' : '1320px',
-      }
+      },
+      keyframes: {
+        slideRight: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        slideRight: 'slideRight 1s ease-in-out',
+      },
     },
   },
   plugins: [],
